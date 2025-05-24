@@ -38,10 +38,7 @@ export default function Header() {
           </div>
           <div className="font-bold text-white hidden md:flex">|</div>
           <div className="flex_center text-white hidden md:flex">
-            <a
-              href="mailto:info@skillspot.com.au"
-              className="flex_center gap-1"
-            >
+            <a href="mailto:info@brightpath.com" className="flex_center gap-1">
               <IoIosMail className="text-secondary" />
               info@brightpath.com
             </a>

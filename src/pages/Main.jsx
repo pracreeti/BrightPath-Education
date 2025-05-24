@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import AboutUs from "../components/About";
+import PopularCourses from "../components/PopularCourses";
 
 export default function Main() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,6 +28,7 @@ export default function Main() {
     <main className="w-full overflow-hidden relative">
       <Hero />
       <AboutUs page={false} />
+      <PopularCourses />
     </main>
   );
 }

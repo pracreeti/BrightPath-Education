@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="image relative w-full h-[85vh]">
         <img
           src={heroBackground}
-          alt="skill spot australia"
+          alt="brighpath consultancy"
           className="size-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#203174]/60 to-[#B5BBD2]/30 mix-blend-multiply"></div>
@@ -39,7 +39,7 @@ export default function Hero() {
             <div className="image relative h-52 md:h-80 w-80 md:w-[70%] rounded-tl-[40%] rounded-br-[40%] px-1 bg-white">
               <img
                 src={counsellingImage}
-                alt="RPL counselling"
+                alt="counselling image"
                 className="size-full object-cover rounded-tl-[40%] rounded-br-[40%] overflow-hidden motion-preset-bounce"
               />
               <p className="absolute flex_center -top-5 -right-5 size-20 rounded-full bg-gradient-to-r from-primary to-secondary font-bold text-sm text-white text-center">
