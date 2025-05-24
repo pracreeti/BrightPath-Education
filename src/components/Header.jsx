@@ -140,12 +140,9 @@ export default function Header() {
             })}
           </nav>
           <div className="flex w-full px-4 gap-1 text-primary mt-2 md:hidden">
-            <a
-              href="mailto:info@skillspot.com.au"
-              className="flex_center gap-1"
-            >
+            <a href="mailto:info@brightpath.com" className="flex_center gap-1">
               <IoIosMail className="text-secondary" />
-              <p>info@skillspot.com.au</p>
+              <p>info@brightpath.com</p>
             </a>
           </div>
           <div className="flex w-full px-4 gap-1 text-primary mt-2 md:hidden">
@@ -155,7 +152,7 @@ export default function Header() {
               className="flex_center gap-1"
             >
               <IoIosMail className="text-secondary" />
-              <p>admin@skillspot.com.au</p>
+              <p>admin@brightpath.com</p>
             </a>
           </div>
           <div className="flex_center gap-10 text-primary text-2xl mt-5">
@@ -176,7 +173,7 @@ export default function Header() {
               <FaWhatsapp />
             </a>
             <a
-              href="https://www.linkedin.com/company/skill-spot-australia/"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-secondary transition duration-300"

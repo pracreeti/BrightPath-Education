@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Hero from "../components/Hero";
+import AboutUs from "../components/About";
 
 export default function Main() {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,15 +11,13 @@ export default function Main() {
       const scrollHeight = document.documentElement.scrollHeight;
       const clientHeight = document.documentElement.clientHeight;
 
-      const isAtBottom = scrollY + clientHeight >= scrollHeight - 50; // Adjust 50px threshold as needed
+      const isAtBottom = scrollY + clientHeight >= scrollHeight - 50;
 
-      // Set visibility based on scroll position and proximity to the bottom
       setIsVisible(scrollY > 300 && !isAtBottom);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -27,6 +26,7 @@ export default function Main() {
   return (
     <main className="w-full overflow-hidden relative">
       <Hero />
+      <AboutUs page={false} />
     </main>
   );
 }
