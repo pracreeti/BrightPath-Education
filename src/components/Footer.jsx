@@ -104,7 +104,7 @@ export default function Footer() {
               in education consulting. As one of the leading experts in the
               field, we are dedicated to helping you achieve your dream of
               studying abroad—whether you're aiming to pursue higher education
-              in the USA or looking to enhance your skills. Join Bright Path
+              in the USA or looking to enhance your skills. Join BrightPath
               today and take the first step toward a brighter future in the USA!
             </p>
           </div>
@@ -208,7 +208,7 @@ export default function Footer() {
         </div>
         <div className="copyright flex_center">
           <p className="text-center">
-            &copy;Copyright 2024 Bright Path Education Consultancy, All Rights
+            &copy;Copyright 2024 BrightPath Education Consultancy, All Rights
             Reserved
           </p>
         </div>

@@ -69,7 +69,7 @@ export default function AboutUs(props) {
                   </p>
 
                   <h2>
-                    Fulfill Your Dream With Bright Path Education Consultancy
+                    Fulfill Your Dream With BrightPath Education Consultancy
                   </h2>
 
                   <p>
