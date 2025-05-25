@@ -31,7 +31,7 @@ export default function Header() {
       <div className="flex justify-between items-center md:w-[80%] w-[60%] h-max py-1 px-3 md:px-14 lg:px-12 lg:pl-32 bg-primary clip-slant">
         <div className="contact flex_center gap-2 text-xs md:text-sm">
           <div className="flex_center text-white hidden md:flex">
-            <a href="tel:+61477608883" className="flex_center gap-1">
+            <a href="tel:+1 215 456-7890" className="flex_center gap-1">
               <FaPhoneAlt className="text-secondary" />
               +1 215 456-7890
             </a>
@@ -46,10 +46,7 @@ export default function Header() {
           <div className="font-bold text-white hidden md:flex">|</div>
           <div className="flex_center gap-1 text-white hidden xl:flex">
             <p>For Business:</p>
-            <a
-              href="mailto:admin@skillspot.com.au"
-              className="flex_center gap-1"
-            >
+            <a href="mailto:admin@brightpath.com" className="flex_center gap-1">
               <IoIosMail className="text-secondary" />
               <p>admin@brightpath.com</p>
             </a>
@@ -144,10 +141,7 @@ export default function Header() {
           </div>
           <div className="flex w-full px-4 gap-1 text-primary mt-2 md:hidden">
             <p>For Business:</p>
-            <a
-              href="mailto:admin@skillspot.com.au"
-              className="flex_center gap-1"
-            >
+            <a href="mailto:admin@brightpath.com" className="flex_center gap-1">
               <IoIosMail className="text-secondary" />
               <p>admin@brightpath.com</p>
             </a>

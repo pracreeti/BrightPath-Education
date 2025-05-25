@@ -6,6 +6,8 @@ import Ribbon from "../components/Ribbon";
 import Services from "../components/Services";
 import Blogs from "../components/Blogs";
 import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import FAQ from "../components/FAQ";
 
 export default function Main() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +39,8 @@ export default function Main() {
       <Services />
       <Blogs />
       <Testimonials />
+      <Contact />
+      <FAQ />
     </main>
   );
 }
