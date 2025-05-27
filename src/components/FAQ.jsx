@@ -6,12 +6,12 @@ import faqSecondImage from "../assets/images/faqsecondimage.png";
 
 const faqs = [
   {
-    question: "What services does BridgePath Education Consultancy provide?",
+    question: "What services does BrightPath Education Consultancy provide?",
     answer:
-      "BridgePath offers comprehensive support for students planning to study abroad, including career counseling, university selection, application assistance, visa processing, interview preparation, and pre-departure orientation.",
+      "BrightPath offers comprehensive support for students planning to study abroad, including career counseling, university selection, application assistance, visa processing, interview preparation, and pre-departure orientation.",
   },
   {
-    question: "Which countries can I apply to through BridgePath?",
+    question: "Which countries can I apply to through BrightPath?",
     answer:
       "We assist students in applying to universities and colleges in popular study destinations such as Australia, the UK, the USA, Canada, New Zealand, and Europe. Our counselors provide guidance tailored to your academic background and goals.",
   },
@@ -21,7 +21,7 @@ const faqs = [
       "Yes, we provide full support with student visa applications, including document preparation, financial guidance, and interview tips to improve your chances of approval.",
   },
   {
-    question: "How does BridgePath help me choose the right university?",
+    question: "How does BrightPath help me choose the right university?",
     answer:
       "Our experienced counselors assess your academic qualifications, career goals, budget, and preferred destination to recommend universities and programs that are the best fit for you.",
   },

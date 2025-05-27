@@ -73,7 +73,7 @@ export default function Header() {
           to="/"
           className="logo absolute -top-10 left-5 md:left-16 size-32 flex_center text-primary"
         >
-          <img src={logo} alt="logo" className="w-3/4 h-3/4 object-cover" />
+          <img src={logo} alt="logo" className="w-full h-full object-cover" />
         </Link>
         <button
           className={twMerge(

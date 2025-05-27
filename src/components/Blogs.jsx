@@ -2,37 +2,15 @@ import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import ViewMore from "./UI/ViewMore";
 import BlogCard from "./BlogCard";
-import toast from "react-hot-toast";
-
-const ALL_BLOGS = "/blogs?limit=0";
+import { blogs as staticBlogs } from "../constant";
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const controller = new AbortController();
-    setIsLoading(true);
-
-    const getAllBlogs = async () => {
-      try {
-        const response = await axios.get(ALL_BLOGS, {
-          signal: controller.signal,
-        });
-        setBlogs(response.data.blogs);
-      } catch (error) {
-        console.error(error);
-        toast.error("Internal Server Error: Failed to fetch blogs");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    getAllBlogs();
-
-    return () => {
-      controller.abort();
-    };
+    setBlogs(staticBlogs);
+    setIsLoading(false);
   }, []);
 
   return (
