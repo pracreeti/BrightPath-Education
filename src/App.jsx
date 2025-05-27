@@ -4,6 +4,7 @@ import Main from "./pages/Main";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

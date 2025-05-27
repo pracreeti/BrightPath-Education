@@ -27,8 +27,8 @@ export const navLinks = [
 export const contactInfo = {
     location: 'Suite 204, Level 2/875 Market St, San Francisco, CA, USA',
     number: '+1 215 456-7890',
-    mail: 'info@brightpath.com.au',
-    businessMail: 'admin@brightpath.com.au'
+    mail: 'info@brightpath.com',
+    businessMail: 'admin@brightpath.com'
 }
 
 export const socialMedia = [
