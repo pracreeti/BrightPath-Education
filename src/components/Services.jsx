@@ -2,41 +2,15 @@ import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import ServiceCard from "./ServiceCard";
 import ViewMore from "./UI/ViewMore";
-import toast from "react-hot-toast";
-
-const ALL_SERVICES = "/service";
+import { services as staticServices } from "../constant";
 
 export default function Services() {
   const [services, setServices] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    let isMounted = true;
-    const controller = new AbortController();
-    setIsLoading(true);
-
-    const getAllServices = async () => {
-      try {
-        const response = await axios.get(ALL_SERVICES, {
-          signal: controller.signal,
-        });
-        if (isMounted) {
-          setServices(response.data.services);
-        }
-      } catch (error) {
-        console.error(error);
-        toast.error("Internal Server Error: Failed to fetch services");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    getAllServices();
-
-    return () => {
-      isMounted = false;
-      controller.abort();
-    };
+    setServices(staticServices);
+    setIsLoading(false);
   }, []);
 
   return (

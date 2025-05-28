@@ -110,3 +110,54 @@ export const blogs = [
         }
     }
 ];
+
+export const services = [
+    {
+        slug: "Skilled Counsellor",
+        image: {
+            imageURL: "https://www.wellbeinghelp.com/wp-content/uploads/2024/02/Career-counselling-after-12th-class-in-gurgaon-india.jpg"
+        },
+        title: "Skilled Counsellor",
+        miniDescription: "Connect with our skilled counselors at BrightPath Education Consultancy. Receive personalized guidance and support tailored to your career goals and aspirations. Start your journey to success today."
+    },
+    {
+        slug: "Online/Physical",
+        image: {
+            imageURL: "https://thumbs.dreamstime.com/b/top-view-office-desk-work-computer-laptop-supplies-top-view-office-desk-work-computer-laptop-supplies-keyboard-114453635.jpg"
+        },
+        title: "Online/Physical",
+        miniDescription: "BrightPath Education Consultancy offers both online and physical learning options. Choose the mode that suits you best and embark on your journey to skill enhancement and career success."
+    },
+    {
+        slug: "All Over USA",
+        image: {
+            imageURL: "https://drupal-prod.visitcalifornia.com/sites/default/files/styles/opengraph_1200x630/public/2025-01/VC_San-Francisco-Bay-Area-Region_gty-1348089637-RF_1280x640.jpg.webp?itok=VyVAPSue"
+        },
+        title: "All Over USA",
+        miniDescription: "BrightPath Education Consultancy serves students all over the country. Wherever you are in USA, access our quality education and training services to advance your skills and career."
+    },
+    {
+        slug: "Test Preparation",
+        image: {
+            imageURL: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Four_Tulane_University_Students_Studying_January_2008.jpg"
+        },
+        title: "Test Preparation",
+        miniDescription: "Ace your exams with BrightPath's comprehensive test preparation programs. From IELTS to SAT, we provide expert guidance and resources to help you achieve top scores and secure your future."
+    },
+    {
+        slug: "Visa Assistance",
+        image: {
+            imageURL: "https://www.joinincampus.com/assets/images/web/visa-assistance-thumb.png"
+        },
+        title: "Visa Assistance",
+        miniDescription: "Navigating the visa process made easy with BrightPath. Our experienced team provides step-by-step assistance to ensure a smooth and successful student visa application experience."
+    },
+    {
+        slug: "University Selection",
+        image: {
+            imageURL: "https://www.joinincampus.com/assets/images/web/university-seletion-thumb.jpg"
+        },
+        title: "University Selection",
+        miniDescription: "Find the perfect fit for your academic and career goals. BrightPath offers personalized university selection services to help you choose from top institutions around the world."
+    }
+];
