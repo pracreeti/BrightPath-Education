@@ -13,7 +13,7 @@ export default function CourseCard({ image, courseName, slug, alt }) {
           <p>No image available</p>
         )}
       </div>
-      <ExploreButton link={`/rpl/enroll/${slug}`} text="Enroll Now" />
+      <ExploreButton link="/" text="Enroll Now" />
     </div>
   );
 }

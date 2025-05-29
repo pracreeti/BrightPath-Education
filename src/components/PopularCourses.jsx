@@ -1,37 +1,15 @@
 import SectionHeader from "./SectionHeader";
-import ViewMore from "./UI/ViewMore";
 import CourseCard from "./CourseCard";
 import { useEffect, useState } from "react";
-import toast from "react-hot-toast";
-
-const ALL_COURSES = "/courses";
+import { popularCourses } from "../constant";
 
 export default function PopularCourses() {
   const [courses, setCourses] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const controller = new AbortController();
-    setIsLoading(true);
-
-    const getAllCourses = async () => {
-      try {
-        const response = await axios.get(`/courses?page=1&limit=8`, {
-          signal: controller.signal,
-        });
-        setCourses(response.data.courses);
-      } catch (error) {
-        console.error(error);
-        toast.error("Internal Server Error: Failed to fetch courses");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    getAllCourses();
-    return () => {
-      controller.abort();
-    };
+    setCourses(popularCourses);
+    setIsLoading(false);
   }, []);
 
   return (
@@ -67,8 +45,6 @@ export default function PopularCourses() {
             </div>
           )}
         </div>
-
-        <ViewMore link="/" text="View More" />
       </div>
     </section>
   );

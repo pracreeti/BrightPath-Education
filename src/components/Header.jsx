@@ -8,7 +8,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { MdLogin } from "react-icons/md";
 import { RiMenuFoldFill } from "react-icons/ri";
 import logo from "../assets/images/logo.png";
 import { navLinks, socialMedia } from "../constant/index";

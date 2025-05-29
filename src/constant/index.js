@@ -115,7 +115,7 @@ export const services = [
     {
         slug: "Skilled Counsellor",
         image: {
-            imageURL: "https://www.wellbeinghelp.com/wp-content/uploads/2024/02/Career-counselling-after-12th-class-in-gurgaon-india.jpg"
+            imageURL: "https://media.istockphoto.com/id/1404822602/photo/group-of-people-sitting-in-a-circle-talking-to-each-other-having-a-group-therapy-appointment.jpg?s=612x612&w=0&k=20&c=Y66GI3JJzo4jZbBk8PpGPsMFdTVOHL12VLiPanzZuEQ="
         },
         title: "Skilled Counsellor",
         miniDescription: "Connect with our skilled counselors at BrightPath Education Consultancy. Receive personalized guidance and support tailored to your career goals and aspirations. Start your journey to success today."
@@ -159,5 +159,40 @@ export const services = [
         },
         title: "University Selection",
         miniDescription: "Find the perfect fit for your academic and career goals. BrightPath offers personalized university selection services to help you choose from top institutions around the world."
+    }
+];
+
+export const popularCourses = [
+    {
+        courseName: "Computer Science - Stanford University",
+        slug: "computer-science-stanford",
+        alt: "Stanford University Computer Science",
+        image: {
+            imageURL: "https://www.cs.stanford.edu/sites/g/files/sbiybj28076/files/styles/card_1900x950/public/media/image/img_9802_0.jpg.webp?h=71976bb4&itok=iwdTTN2k"
+        }
+    },
+    {
+        courseName: "Business Administration - Harvard University",
+        slug: "business-administration-harvard",
+        alt: "Harvard Business School Course",
+        image: {
+            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkIvdUvWMT8kd_Ib4WefKv3xAKI-Kf4IPZW4Zf7CiajjVaEG71Ar0bBCwuGYqvcnBXxOE&usqp=CAU"
+        }
+    },
+    {
+        courseName: "Data Science - Massachusetts Institute of Technology",
+        slug: "data-science-mit",
+        alt: "MIT Data Science Program",
+        image: {
+            imageURL: "https://news.mit.edu/sites/default/files/images/201806/MicroMasters-in-Statistics-Data-Science-MIT-00.jpeg"
+        }
+    },
+    {
+        courseName: "Artificial Intelligence - Carnegie Mellon University",
+        slug: "artificial-intelligence-cmu",
+        alt: "Carnegie Mellon AI Program",
+        image: {
+            imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPehLBwAlv0R0vSMhm4LGF_liXY4eftc0-JQ&s"
+        }
     }
 ];

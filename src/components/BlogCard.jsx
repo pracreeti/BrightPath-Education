@@ -15,7 +15,7 @@ export default function BlogCard({ image, title, miniDescription, slug }) {
       </div>
       <div className="flex_center flex-col gap-3">
         <h4 className="font-bold text-2xl text-primary">{title}</h4>
-        <p className="text-text text-base h-20 w-full text-centers">
+        <p className="text-text text-base h-20 w-full text-center">
           {miniDescription}
         </p>
       </div>
