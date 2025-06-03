@@ -1,4 +1,4 @@
-import heroBackground from "../assets/images/herobg.jpg";
+import heroBackground from "../assets/images/herobgthree.jpg";
 import counsellingImage from "../assets/images/counselling.jpg";
 import ExploreButton from "../components/UI/ExploreButton";
 

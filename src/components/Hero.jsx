@@ -1,4 +1,4 @@
-import heroBackground from "../assets/images/herobg.jpg";
+import heroBackground from "../assets/images/herobgtwo.jpg";
 import counsellingImage from "../assets/images/counselling.jpg";
 
 const heroCards = [

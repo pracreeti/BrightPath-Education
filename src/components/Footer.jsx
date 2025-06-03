@@ -95,7 +95,7 @@ export default function Footer() {
             <Link to={"/"} className="size-20">
               <img
                 src={logo}
-                alt="Skill Spot Australia"
+                alt="BrightPath Education Consultancy"
                 className="size-full object-contain"
               />
             </Link>
@@ -198,13 +198,9 @@ export default function Footer() {
       </div>
       <div className="footerbottom p-4 flex_center flex-col gap-4 bg-primary text-white">
         <div className="flex_center gap-4">
-          <Link to={"/terms"} className="hover:text-secondary">
-            Terms and Conditions
-          </Link>
+          <p>Terms and Conditions</p>
           <div className=" h-4 w-0.5 bg-white"></div>
-          <Link to={"/privacy"} className="hover:text-secondary">
-            Privacy Policy
-          </Link>
+          <p>Privacy Policy</p>
         </div>
         <div className="copyright flex_center">
           <p className="text-center">

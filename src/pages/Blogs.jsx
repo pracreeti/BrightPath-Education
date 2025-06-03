@@ -6,9 +6,6 @@ import { blogs as staticBlogs } from "../constant";
 
 const BlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
-  const [totalPages, setTotalPages] = useState(1);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -40,28 +37,6 @@ const BlogsPage = () => {
                   No Blogs Found
                 </p>
               )}
-            </div>
-
-            <div className="flex w-full py-2 justify-between">
-              <button
-                disabled={currentPage === 1 || isLoading}
-                onClick={() => setPage(page - 1)}
-                className="py-3 px-6 rounded-md text-white bg-primary hover:bg-primary/80"
-              >
-                Previous
-              </button>
-              <div className="flex_center text-xl">
-                Page - {currentPage} / {totalPages}
-              </div>
-              <button
-                disabled={
-                  currentPage === totalPages || isLoading || totalPages === 0
-                }
-                onClick={() => setPage(page + 1)}
-                className="py-3 px-6 rounded-md text-white bg-primary hover:bg-primary/80"
-              >
-                Next
-              </button>
             </div>
           </div>
         </section>

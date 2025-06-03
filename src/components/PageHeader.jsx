@@ -1,6 +1,6 @@
 import { BiHome } from "react-icons/bi";
 import { IoIosArrowForward } from "react-icons/io";
-import pageHeaderImage from "../assets/images/herobg.jpg";
+import pageHeaderImage from "../assets/images/herobgtwo.jpg";
 import { Link } from "react-router-dom";
 
 const PageHeader = ({ title, link }) => {

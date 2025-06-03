@@ -1,5 +1,4 @@
 import PageHeader from "../components/PageHeader";
-import FAQ from "../components/FAQ";
 import AboutUs from "../components/About";
 import Ribbon from "../components/Ribbon";
 import Mission from "../components/Mission";
@@ -12,7 +11,6 @@ const About = () => {
         <AboutUs page={true} />
         <Ribbon />
         <Mission />
-        <FAQ />
       </main>
     </>
   );
