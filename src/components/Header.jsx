@@ -25,7 +25,7 @@ export default function Header() {
   };
 
   return (
-    <header className="z-40 sticky -top-0 left-0 w-full flex flex-col items-end overflow-x-clip shadow-custom bg-white">
+    <header className="z-40 sticky -top-0 left-0 w-full flex flex-col items-end overflow-x-clip shadow-custom bg-gray-200">
       {/* Top part of header */}
       <div className="flex justify-between items-center md:w-[80%] w-[60%] h-max py-1 px-3 md:px-14 lg:px-12 lg:pl-32 bg-primary clip-slant">
         <div className="contact flex_center gap-2 text-xs md:text-sm">
@@ -67,7 +67,7 @@ export default function Header() {
       </div>
 
       {/* Bottom part of header */}
-      <div className="flex justify-end items-center w-full h-20 bg-white px-3 md:px-6 lg:px-20 relative motion-preset-bounce">
+      <div className="flex justify-end items-center w-full h-20 bg-gray-200 px-3 md:px-6 lg:px-20 relative motion-preset-bounce">
         <Link
           to="/"
           className="logo absolute -top-10 left-5 md:left-16 size-32 flex_center text-primary"

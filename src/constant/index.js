@@ -79,7 +79,7 @@ export const blogs = [
         miniDescription:
             "Get a sneak peek into the daily life, challenges, and opportunities for international students studying in America.",
         image: {
-            imageURL: "https://globaltree.in/uploadsweb/blog/life-as-a-student-in-usa-what-no-one-tells-you-L-1733317047.webp"
+            imageURL: "https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/3MkP3ns6zznQ9nHt3gj0zS/fe8e3d58b0007bd92851fa32066f607e/CampusLife_Student_Smiling_Outdoor_GettyImages-1209049220.jpg?fit=thumb"
         }
     },
     {

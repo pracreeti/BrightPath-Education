@@ -186,10 +186,7 @@ export default function Footer() {
                   );
                 })}
               </div>
-              <Link
-                to={"tel:0477608883"}
-                className="flex_center px-4 py-2 rounded-lg w-max bg-secondary text-white hover:bg-secondary/70 transition duration-300s"
-              >
+              <Link className="flex_center px-4 py-2 rounded-lg w-max bg-secondary text-white hover:bg-secondary/70 transition duration-300s">
                 Call Us Today
               </Link>
             </div>

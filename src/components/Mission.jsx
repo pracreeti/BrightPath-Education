@@ -7,11 +7,11 @@ const Mission = () => {
       <div className="flex flex-col lg:flex-row lg:justify-between w-full gap-16">
         {/* Let's Go Section */}
         <div className="flex flex-col w-full lg:w-[30%] gap-8">
-          <div className="flex w-full flex-col gap-5">
+          <div className="flex w-full flex-col gap-5 bg-quaternary shadow-custom rounded-md px-4 py-12">
             <h2 className="font-bold text-3xl lg:text-5xl">
               Achieve Your Dream With BrightPath Education Consultancy
             </h2>
-            <p className="text-text">
+            <p className="text-text text-justify">
               Our commitment is to offer comprehensive services to students
               interested in various RPL certificates. Empowering your journey
               with tailored support and guidance every step of the way.
@@ -21,7 +21,7 @@ const Mission = () => {
             <h2 className="font-extrabold text-primary text-3xl lg:text-4xl">
               You're Just 60 Seconds Away from Transforming Your Life
             </h2>
-            <p className="text-text">
+            <p className="text-text text-justify">
               Don't wait, take the first step towards a brighter future today.
               Join thousands of successful candidates who used our FREE 60
               second skills check to kickstart their RPL journey. Discover how
@@ -44,7 +44,7 @@ const Mission = () => {
             <div className="flex size-10 bg-white border-primary border-2 rotate-45 absolute left-0 md:left-3 lg:left-5"></div>
             <div className="flex flex-col w-[90%] justify-center py-6 px-3 border-2 border-primary rounded-xl z-10 bg-white gap-5">
               <h2 className="text-2xl font-bold">Our Mission</h2>
-              <p className="text-text">
+              <p className="text-text text-justify">
                 BrightPath Education Consultancy is dedicated to delivering
                 exceptional services that empower our clients to achieve
                 success. We are constantly pursuing excellence and staying
@@ -60,7 +60,7 @@ const Mission = () => {
             <div className="flex size-10 bg-quaternary border-quaternary border-2 rotate-45 absolute left-0 md:left-3 lg:left-5"></div>
             <div className="flex flex-col w-[90%] justify-center py-6 px-3 border-2 border-quaternary rounded-xl z-10 bg-quaternary gap-5 shadow-custom">
               <h2 className="text-2xl font-bold">Our Vision</h2>
-              <p className="text-text">
+              <p className="text-text text-justify">
                 BrightPath Education Consultancy is committed to empowering
                 individuals from all walks of life to achieve their educational
                 and career goals. We believe in unlocking every person's

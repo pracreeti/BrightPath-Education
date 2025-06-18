@@ -2,39 +2,26 @@ import { Fragment, useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import TestimonialCard from "./TestimonialCard";
 import toast from "react-hot-toast";
+import axios from "axios";
 
-const ALL_TESTIMONIALS = "/testimonials";
+const ALL_TESTIMONIALS =
+  "https://brightpath-education-consultancy.free.beeceptor.com/testimonials";
 
 function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    let isMounted = true;
-    const controller = new AbortController();
     setIsLoading(true);
 
-    const getAllTestimonials = async () => {
-      try {
-        const response = await axios.get(ALL_TESTIMONIALS, {
-          signal: controller.signal,
-        });
-        if (isMounted) {
-          setTestimonials(response.data);
-        }
-      } catch (error) {
-        console.error(error);
-        toast.error("Internal Server Error: Failed to fetch testimonials");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    getAllTestimonials();
-    return () => {
-      isMounted = false;
-      controller.abort();
-    };
+    axios
+      .get(ALL_TESTIMONIALS)
+      .then((res) => setTestimonials(res.data))
+      .catch((err) => {
+        console.error(err);
+        toast.error("Failed to fetch testimonials");
+      })
+      .finally(() => setIsLoading(false));
   }, []);
 
   return (

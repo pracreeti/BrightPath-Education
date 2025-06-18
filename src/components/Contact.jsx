@@ -68,12 +68,6 @@ export default function Contact() {
 
         {/* Form Section */}
         <div className="flex_center xl:items-start flex-col gap-8 w-full lg:w-1/2 xl:w-[600px] rounded-lg bg-white py-10 pb-20 px-4 relative xl:ml-20">
-          {/* Decorative Bubbles */}
-          <div className="absolute h-4 bg-white w-10 rounded-full -left-8 bottom-12"></div>
-          <div className="absolute h-4 bg-white w-20 rounded-full -left-12 bottom-4"></div>
-          <div className="absolute size-4 bg-white rounded-full -left-20 bottom-4"></div>
-          <div className="absolute size-4 bg-quaternary rounded-full -left-2 bottom-8"></div>
-
           <SectionHeader
             header="Get In Touch"
             description="Advance your career with us"
@@ -135,16 +129,6 @@ export default function Contact() {
 
         {/* Contact Info Section */}
         <div className="flex_center flex-col gap-8 w-full lg:w-1/2 xl:w-96 rounded-lg bg-primary py-10 px-4 relative xl:absolute xl:top-52 xl:left-1/2 xl:-translate-x-[40%]">
-          {/* Decorative Bubbles */}
-          <div className="absolute h-4 bg-primary w-10 rounded-full -right-8 bottom-16"></div>
-          <div className="absolute h-4 bg-primary w-20 rounded-full -right-12 bottom-8"></div>
-          <div className="absolute size-4 bg-primary rounded-full -right-20 bottom-8"></div>
-          <div className="absolute size-4 bg-quaternary rounded-full -right-2 bottom-12"></div>
-          <div className="absolute h-4 bg-primary w-10 rounded-full -right-8 top-16"></div>
-          <div className="absolute h-4 bg-primary w-20 rounded-full -right-12 top-8"></div>
-          <div className="absolute size-4 bg-primary rounded-full -right-20 top-8"></div>
-          <div className="absolute size-4 bg-quaternary rounded-full -right-2 top-12"></div>
-
           <SectionHeader
             header="Let's Have A Talk"
             description="Visit or call us today"
