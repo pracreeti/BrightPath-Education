@@ -2,10 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ServiceCard({ image, title, miniDescription, slug }) {
   return (
-    <Link
-      to={`/services/servicedetail/${slug}`}
-      className="servicecard relative col-span-1 w-full h-96"
-    >
+    <Link className="servicecard relative col-span-1 w-full h-96">
       <div className="flex_center h-[80%] w-full rounded-lg overflow-hidden">
         <img
           src={image}

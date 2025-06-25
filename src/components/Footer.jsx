@@ -4,53 +4,8 @@ import { navLinks, contactInfo, socialMedia } from "../constant";
 import { FaMapLocation } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { isAxiosError } from "axios";
-import toast from "react-hot-toast";
-
-const EMAIL_SUBSCRIPTION = "/subscribe/subscribe";
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [isDisabled, setIsDisabled] = useState(true);
-
-  useEffect(() => {
-    if (email === "" || isLoading === true) {
-      setIsDisabled(true);
-    } else {
-      setIsDisabled(false);
-    }
-  }, [email, isLoading]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-
-    try {
-      await axios.post(EMAIL_SUBSCRIPTION, JSON.stringify({ email }), {
-        headers: { "Content-Type": "application/json" },
-      });
-      setEmail("");
-      toast.success("Congratulations!!! Email subscription successful");
-      setIsLoading(false);
-    } catch (err) {
-      if (isAxiosError(err)) {
-        if (!err?.response) {
-          toast.error("No Serer Response");
-        } else if (err.response?.status === 400) {
-          toast.error("Email missing");
-        } else if (err.response?.status === 409) {
-          toast.error("You have already subscribed");
-        } else {
-          toast.error("Oops!!! Something went wrong. Try Again");
-        }
-      }
-      setIsLoading(false);
-    }
-  };
-
   return (
     <footer className="w-full h-max overflow-hidden">
       <div className="mainfooter mt-48 md:mt-32 lg:mt-20 xl:mt-16 flex_center w-full pt-44 md:pt-36 lg:pt-20 xl:pt-16 pb-8 px-4 md:px-6 lg:px-12 bg-quaternary relative">
@@ -64,29 +19,16 @@ export default function Footer() {
               of education and Blended mode of Learning.
             </p>
           </div>
-          <form
-            onSubmit={handleSubmit}
-            className="input flex_center flex-col lg:flex-row lg:w-1/2 gap-2"
-          >
+          <form className="input flex_center flex-col lg:flex-row lg:w-1/2 gap-2">
             <input
               id="email"
               type="email"
               placeholder="Enter your email"
               autoComplete="off"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
               className="px-4 py-2 rounded-lg flex_center w-full text-text focus:outline-none focus:border-b-2 focus:border-primary"
             />
-            <button
-              disabled={isDisabled}
-              onClick={() => handleSubmit}
-              className="flex_center px-4 py-2 h-12 rounded-lg w-32 bg-secondary text-white hover:bg-secondary/70 transition duration-300"
-            >
-              {!isLoading ? (
-                <p>Subscribe</p>
-              ) : (
-                <div className="inline-block size-5 border-2 border-primary rounded-full border-b-white animate-rotation"></div>
-              )}
+            <button className="flex_center px-4 py-2 h-12 rounded-lg w-32 bg-secondary text-white hover:bg-secondary/70 transition duration-300">
+              <p>Subscribe</p>
             </button>
           </form>
         </div>
@@ -131,36 +73,20 @@ export default function Footer() {
               <h3 className="text-2xl font-bold">
                 <span className="text-secondary">Quick</span> contact
               </h3>
-              <div className="flex flex-col w-full gap-2">
-                <a
-                  href="/"
-                  target="_blank"
-                  className="gap-2 flex items-center text-text text-base hover:text-primary"
-                >
+              <div className="flex flex-col w-full gap-2 cursor-pointer">
+                <a className="gap-2 flex items-center text-text text-base hover:text-primary">
                   <FaMapLocation className="text-secondary" />
                   {contactInfo.location}
                 </a>
-                <a
-                  href={`tel:${contactInfo.number}`}
-                  target="_blank"
-                  className="gap-2 flex items-center text-text text-base hover:text-primary"
-                >
+                <a className="gap-2 flex items-center text-text text-base hover:text-primary">
                   <FaPhoneAlt className="text-secondary" />
                   {contactInfo.number}
                 </a>
-                <a
-                  href={`mailto:${contactInfo.mail}`}
-                  target="_blank"
-                  className="gap-2 flex items-center text-text text-base hover:text-primary"
-                >
+                <a className="gap-2 flex items-center text-text text-base hover:text-primary">
                   <IoMail className="text-secondary" />
                   {contactInfo.mail}
                 </a>
-                <a
-                  href={`mailto:${contactInfo.businessMail}`}
-                  target="_blank"
-                  className="gap-2 flex items-center text-text text-base hover:text-primary"
-                >
+                <a className="gap-2 flex items-center text-text text-base hover:text-primary">
                   <FaPhoneAlt className="text-secondary" />
                   For Business: &nbsp;
                   {contactInfo.businessMail}
